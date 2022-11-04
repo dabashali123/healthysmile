@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap');
+*{
+    direction: rtl;
+    margin: 0;
+    box-sizing: content-box;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(252, 255, 230);
+    font-family:'Tajawal', sans-serif;   
+}
+h1{
+    font-size: 5rem;
+    color: rgb(238, 210, 50);
+    margin-bottom: 1rem;
+}
+
+h3{
+    line-height: 1.8;
+    font-size:2rem;
+    color: red;
+    margin-bottom: 2rem;
+
+}
+p{
+    font-size: 1.6rem;
+    color: rgb(110, 110, 61);
+    line-height: 2;
+}
+/* nav continer رأس الصفحة */
+.nav-con{
+    background-color: rgb(238, 237, 170);
+    color: rgb(238, 210, 50); 
+    
+}
+
+.cont .nav-con{
+    position: fixed;
+    width: 100%;
+    border-bottom: red 1px solid;
+    z-index: 100;
+} 
+nav{
+    
+    width: 90%;
+    margin:0 ;
+    justify-content: space-between;
+    max-width: 1366px;
+    display: flex;
+    min-width:10vh;
+    font-size: 1.6rem;
+    align-items: center;
+  
+}
+nav .logo{
+    font-family: 'Kufam', sans-serif;
+    color: rgb(233, 17, 17);
+    font-weight: bold;  
+    flex: 2;  
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  
+
+}
+nav h3:hover{
+    color: black;
+    font-family:'Tajawal', sans-serif; 
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex: 1; 
+    margin:auto;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(4, 12, 20);
+    display: block;
+}
+nav ul li a:hover{
+    color: rgb(42, 214, 226);
+}
+.section{
+    height: 90vh;
+    position: relative;
+}
+.section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:linear-gradient(90deg,rgba(190,206,145,0.8)0%,rgba(51, 78, 104, 0.6)20%),url(../image/IMG_20221014_165805_860.jpg);
+    z-index: -100;
+    animation: herobg 3s ease-in;
+   }
+.section:hover::after{
+  
+    background-image:linear-gradient(90deg,rgba(51,78,104,0.6)0%,rgba(190, 206, 145, 0.7)20%),url(../image/967771791601_status_65c65637a6ce45c8969700eb9e0e206b.jpg); 
+    
+}
+
+.sc_content{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+}
+
+h1 span, h3 span{
+    color: rgb(38, 207, 103);
+
+}
+h1 span:hover{
+    color: black;
+}
+h3 span:hover{
+   color:white;
+} 
+.btn{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.75rem 3rem;
+    font-family: inherit;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background: rgb(80, 80, 42);
+    color: black;
+}
+.btn a{
+    color: rgb(138, 207, 228);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.btn:hover{
+    background-color: cadetblue;
+}
+.btn:active{
+    transform: scale(0.85);
+}
+.social a{
+    display: inline-block;
+    margin-top: 10px ;
+    margin-left: auto;
+    color: rgb(225, 228, 77);
+    font-size: 26px;
+    padding-left: 25px;
+    transition: 1s;
+
+}
+.social a:hover{
+    color: cyan;
+}
+
+/*أعمالنا */
+.sc_qual{
+    width: 90%;
+    max-width: 1366px;
+    min-height: 50vh;
+    height: 100%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.sc_qual h2{
+    font-size: 3rem;
+    color: rgb(131, 12, 12);
+}
+.quality-continer{
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 2rem;
+    padding-top: 5rem;
+}
+.qual{
+    background: rgb(240, 243, 194);
+    width: 30%;
+    padding: 4rem 0;
+    outline: solid red 2px;
+    border-radius: 10px 10px ;
+    transition: 300ms;
+}
+.qual:hover{
+    outline: none  red;
+    box-shadow: 5px -5px 25px rgba(1 1 1 /0.5);
+    border-radius: 35px 90px;
+    background-color: rgb(170, 224, 228);
+    transform: scale(1.1);
+}
+.qual p{
+    text-align: center;
+    width: 70%;
+    margin: 1rem auto;
+}
+.qual h3{
+    color: rgb(13, 202, 32);
+    font-size: 2.2rem;
+    margin-bottom: 0%;
+}
+.h-qual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-qual i{
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color:  rgb(59, 116, 53);
+}
+
+
+/* من نحن */
+.about_us{
+    background: rgb(238, 237, 170);
+}
+.about{
+    max-width: 1366px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+}
+.about_co h2{
+    color:rgb(131, 12, 12) ;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.about_co{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about_co p{
+    margin-top:1rem ;
+    width: 80%;
+    color: rgb(15, 14, 11);
+}
+.about image{
+    width: 100%;
+    height: 100%;
+}
+/*احجز موعدك*/
+.book_your_appointment{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    height: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+.book_your_appointment h2{
+    font-size: 3rem;
+    color:rgba(131, 12, 12);
+}
+
+labeL,input,textarea{
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+form{
+    display: flex;
+    flex-direction:column;
+    padding: 5rem 0;
+    width: 100%;
+    text-align: center;
+}
+form .btn{
+    width: 100px;
+    align-self: center;
+}
+input,textarea{
+    width: 80%;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.75rem 2rem;
+    background-color: rgb(240, 233, 174);
+    margin: 0 auto;
+}
+label,textarea,input{
+    margin-bottom: 1.5rem;
+}
+footer{
+    background-color:rgb(238, 237, 170);
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    display: flex;
+}
+
+
+
+/* الحركة تبع الصوره */
+@keyframes herobg{
+   from{
+       scale: 1.2;
+   }
+  to{
+      scale: 1;
+  }
+}
+/* الميديا كويري الكريهه */
+@media screen and (max-width:1013px){
+    .sc_content
+    {
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width:1013px){
+    .nav-con{
+        background-color: white;
+    }
+    .sc_content.btn{
+       display:none;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a {
+        font-size: 1.4rem;
+        color: red;
+      
+    }
+}
+@media screen and (max-width:1013px){
+    .quality-continer{
+        flex-wrap: wrap;
+    }
+    .qual{
+        width: 100%;
+    }
+}
+@media screen and (max-width:979px){
+    .about img{
+        display: none;
+    }
+    .about_co{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media (min-width: 360px){
+    body{
+        text-align: center;
+        width: 100%;
+    }
+    
+
+    .book_your_appointment h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1800px){
+   .items{
+    width:150px;
+
+   }
+
+}
+
+
+
